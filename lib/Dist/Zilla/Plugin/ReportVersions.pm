@@ -458,6 +458,7 @@ BEGIN {
 
     diag("Testing with Perl $], $^X");
     for my $module (sort keys %requires) {
+        next if $skip{$module};
         use_ok $module or BAIL_OUT("can't load $module");
         my $version = $module->VERSION;
         diag("    $module version is $version");
