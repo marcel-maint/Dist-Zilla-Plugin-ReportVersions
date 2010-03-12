@@ -461,6 +461,7 @@ BEGIN {
         next if $skip{$module};
         use_ok $module or BAIL_OUT("can't load $module");
         my $version = $module->VERSION;
+        $version = 'undefined' unless defined $version;
         diag("    $module version is $version");
     }
     done_testing;

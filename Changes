@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - removed weaver.ini since that's handled in Dist::Zilla's [@MARCEL] now
+    - catch undefined version numbers so there's no warning
 
 1.100700  2010-03-11 15:44:30 Europe/Vienna
     - original version
