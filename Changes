@@ -3,6 +3,8 @@ Revision history for Perl extension {{$dist->name}}
 {{$NEXT}}
     - removed weaver.ini since that's handled in Dist::Zilla's [@MARCEL] now
     - catch undefined version numbers so there's no warning
+    - the generated test requires Test::More 0.88 for done_testing() to work
+      without a plan
 
 1.100700  2010-03-11 15:44:30 Europe/Vienna
     - original version
