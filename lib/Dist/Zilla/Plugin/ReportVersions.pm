@@ -437,6 +437,7 @@ BEGIN {
     # Module::Install, or that mess with the test count, such as the Test::*
     # modules listed here.
     my %skip = map { $_ => 1 } qw(
+      App::FatPacker
       Module::Install
       Test::YAML::Meta
       Test::Pod::Coverage
