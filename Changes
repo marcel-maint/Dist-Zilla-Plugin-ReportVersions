@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - made the generated test more robust by catching and noting warnings.
+      HTML::Table's illegal version string '2.08a' caused problems.
 
 1.100840  2010-03-25 11:50:31 Europe/Vienna
     - removed weaver.ini since that's handled in Dist::Zilla's [@MARCEL] now
