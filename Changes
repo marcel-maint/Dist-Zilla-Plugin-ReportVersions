@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.100860  2010-03-27 11:07:16 Europe/Vienna
     - made the generated test more robust by catching and noting warnings.
       HTML::Table's illegal version string '2.08a' caused problems.
 
