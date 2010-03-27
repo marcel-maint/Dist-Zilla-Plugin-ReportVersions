@@ -460,8 +460,8 @@ BEGIN {
     diag("Testing with Perl $], $^X");
     for my $module (sort keys %requires) {
         next if $skip{$module};
-        use_ok $module or BAIL_OUT("can't load $module");
         local $SIG{__WARN__} = sub { note "$module: $_[0]" };
+        use_ok $module or BAIL_OUT("can't load $module");
         my $version = $module->VERSION;
         $version = 'undefined' unless defined $version;
         diag("    $module version is $version");

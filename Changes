@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - moved the warn catcher to before using the candidate module
 
 1.100860  2010-03-27 11:07:16 Europe/Vienna
     - made the generated test more robust by catching and noting warnings.
