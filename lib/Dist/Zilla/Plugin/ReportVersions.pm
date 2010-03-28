@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::ReportVersions;
-# ABSTRACT: write a test that reports used module versions
+# ABSTRACT: Write a test that reports used module versions
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
 
@@ -26,7 +26,7 @@ In C<dist.ini>:
 =head1 DESCRIPTION
 
 This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing the
-following files
+following file:
 
   t/000-report-versions.t
 
@@ -438,6 +438,7 @@ BEGIN {
     # modules listed here.
     my %skip = map { $_ => 1 } qw(
       App::FatPacker
+      Class::Accessor::Classy
       Module::Install
       Test::YAML::Meta
       Test::Pod::Coverage
@@ -459,7 +460,10 @@ BEGIN {
 
     diag("Testing with Perl $], $^X");
     for my $module (sort keys %requires) {
-        next if $skip{$module};
+        if ($skip{$module}) {
+            note "$module doesn't want to be loaded directly, skipping";
+            next;
+        }
         local $SIG{__WARN__} = sub { note "$module: $_[0]" };
         use_ok $module or BAIL_OUT("can't load $module");
         my $version = $module->VERSION;
