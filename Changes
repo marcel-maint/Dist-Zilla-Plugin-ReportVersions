@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.100880  2010-03-29 21:18:55 Europe/Vienna
     - moved the warn catcher to before using the candidate module
     - when skipping a module, make a note about it
     - skip Moose::Role (conflicts with Moose)
