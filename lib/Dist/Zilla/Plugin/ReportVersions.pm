@@ -436,10 +436,17 @@ BEGIN {
     # Skip modules that either don't want to be loaded directly, such as
     # Module::Install, or that mess with the test count, such as the Test::*
     # modules listed here.
+    #
+    # Moose::Role conflicts if Moose is loaded as well, but Moose::Role is in
+    # the Moose distribution and it's certain that someone who uses
+    # Moose::Role also uses Moose somewhere, so if we disallow Moose::Role,
+    # we'll still get the relevant version number.
+
     my %skip = map { $_ => 1 } qw(
       App::FatPacker
       Class::Accessor::Classy
       Module::Install
+      Moose::Role
       Test::YAML::Meta
       Test::Pod::Coverage
       Test::Portability::Files
