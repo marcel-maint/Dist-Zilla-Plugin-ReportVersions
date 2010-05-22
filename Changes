@@ -2,6 +2,7 @@ Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
     - require Test::More 0.94
+    - skip Test::Kwalitee
 
 1.100880  2010-03-29 21:18:55 Europe/Vienna
     - moved the warn catcher to before using the candidate module
