@@ -448,6 +448,7 @@ BEGIN {
       Devel::Cover
       Module::Install
       Moose::Role
+      POE::Loop::Tk
       Template::Test
       Test::Kwalitee
       Test::Pod::Coverage
