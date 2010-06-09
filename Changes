@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.101600  2010-06-09 13:35:12 Europe/Vienna
     - skip POE::Loop::Tk
 
 1.101460  2010-05-26 09:15:02 Europe/Vienna
