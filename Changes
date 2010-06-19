@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - converted tabs to spaces (thanks Caleb)
 
 1.101600  2010-06-09 13:35:12 Europe/Vienna
     - skip POE::Loop::Tk
