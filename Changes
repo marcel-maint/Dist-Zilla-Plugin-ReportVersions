@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.101700  2010-06-19 10:49:16 Europe/Vienna
     - converted tabs to spaces (thanks Caleb)
 
 1.101600  2010-06-09 13:35:12 Europe/Vienna
