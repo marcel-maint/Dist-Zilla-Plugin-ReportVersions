@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.102460  2010-09-03 12:24:12 Europe/Vienna
     - require_ok() instead of use_ok() so we don't fail on importing
       conflicting symbols from different packages (thanks RCAPUTO)
 
