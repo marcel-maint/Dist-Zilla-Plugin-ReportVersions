@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - require_ok() instead of use_ok() so we don't fail on importing
+      conflicting symbols from different packages (thanks RCAPUTO)
 
 1.101700  2010-06-19 10:49:16 Europe/Vienna
     - converted tabs to spaces (thanks Caleb)
