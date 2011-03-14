@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.110730  2011-03-14 10:31:45 Europe/Vienna
     - skip the 'open' pragma because 'require open' complains 'Not
       enough arguments for open'.
 
