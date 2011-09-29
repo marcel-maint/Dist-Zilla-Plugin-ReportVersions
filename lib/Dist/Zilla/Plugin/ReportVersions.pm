@@ -452,6 +452,7 @@ BEGIN {
       Moose::Role
       POE::Loop::Tk
       Template::Test
+      Term::ReadLine::Gnu
       Test::Kwalitee
       Test::Pod::Coverage
       Test::Portability::Files
