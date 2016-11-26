@@ -1,6 +1,9 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Use CPAN::Meta::YAML in place of embedded YAML::Tiny
+      The embedded version failed to handle some constructs
+    - Add Term::ReadLine::Gnu to skip list
 
 1.110730  2011-03-14 10:31:45 Europe/Vienna
     - skip the 'open' pragma because 'require open' complains 'Not
